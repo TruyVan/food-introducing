@@ -1,0 +1,56 @@
+@import '../../../../public/assets/css/_var.scss';
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-logo{}
+    .header-menu{
+        display: flex;
+        flex: 1;
+        .header-menu-content.ant-menu{
+            flex: 1;
+            height: fit-content;
+            border: none;
+            display: flex;
+            justify-content: center;
+            line-height: 25px;
+            .header-menu-item{
+                &:hover{
+                    &::after{
+                        opacity: 1;
+                        width: 100%;
+                        transition: all 0.3s;
+                    }
+                }
+                &.ant-menu-submenu-selected{
+                    color: $danger;
+                    .ant-menu-title-content{
+                        color: $danger;
+                    }
+                    .ant-menu-item-icon{
+                        color: $danger;
+                    }
+                }
+                &.ant-menu-item-selected{
+                    color: $danger;
+                    &::after{
+                        opacity: 1;
+                        width: 100%;
+                        transition: all 0.3s;
+                    }
+                }
+                &::after{
+                    left: 0px;
+                    opacity: 1;
+                    width: 0px;
+                    transition: all 0.3s;
+                    border-color: $danger;
+                }
+                .ant-menu-title-content{
+                    line-height: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

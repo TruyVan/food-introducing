@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-menu {
+  display: flex;
+  flex: 1;
+}
+.header .header-menu .header-menu-content.ant-menu {
+  flex: 1;
+  height: fit-content;
+  border: none;
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item:hover::after {
+  opacity: 1;
+  width: 100%;
+  transition: all 0.3s;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item.ant-menu-submenu-selected {
+  color: #FF000F;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item.ant-menu-submenu-selected .ant-menu-title-content {
+  color: #FF000F;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item.ant-menu-submenu-selected .ant-menu-item-icon {
+  color: #FF000F;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item.ant-menu-item-selected {
+  color: #FF000F;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item.ant-menu-item-selected::after {
+  opacity: 1;
+  width: 100%;
+  transition: all 0.3s;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item::after {
+  left: 0px;
+  opacity: 1;
+  width: 0px;
+  transition: all 0.3s;
+  border-color: #FF000F;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item .ant-menu-title-content {
+  line-height: 30px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=header.css.map */
